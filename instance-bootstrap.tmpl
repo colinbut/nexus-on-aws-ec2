@@ -3,8 +3,8 @@ yum update -y
 yum install java-1.8.0-openjdk -y
 mkdir nexus
 cd nexus
-wget -O nexus.tar.gz https://download.sonatype.com/nexus/3/latest-unix.tar.gz
+wget -O nexus.tar.gz http://download.sonatype.com/nexus/3/nexus-3.22.1-02-unix.tar.gz
 tar -xvzf nexus.tar.gz
 rm -f nexus.tar.gz
-cd nexus-3.20.1-01/bin/
+cd nexus-3.22.1-02/bin/
 ./nexus start
